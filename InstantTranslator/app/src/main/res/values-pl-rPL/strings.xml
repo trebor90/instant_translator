@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="anki_droid_info">Aplikacja AnkiDroid pomaga efektywnie zapamiętywać słówka. Umożliwia tworzenie talii fiszek, które następnie możemy przeglądać w celu zapamiętania.
+Po jej instalacji można dodawać słówka bezpośrednio z poziomu aplikacji <b>InstantTranslator</b>. Dzięki temu w łatwy sposób można tworzyć swoje fiszki, ze słówkami, które napotkaliśmy podczas tłumaczenia za pomocą <b>InstantTranslator</b>.</string>
+    <string name="install_ankidroid">Zainstaluj AnkiDroid</string>
+    <string name="make_own_flashcards">Twórz własne fiszki!</string>
+</resources>
