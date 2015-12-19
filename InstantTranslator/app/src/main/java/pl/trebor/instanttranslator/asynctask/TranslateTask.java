@@ -7,6 +7,7 @@ import android.util.Log;
 
 import java.io.IOException;
 
+import pl.trebor.freegoogletranslate.EmptyResponseException;
 import pl.trebor.freegoogletranslate.Language;
 import pl.trebor.freegoogletranslate.TranslateResult;
 import pl.trebor.freegoogletranslate.Translator;
@@ -67,7 +68,7 @@ public class TranslateTask extends AsyncTask<String, String, AsyncTaskResult<Tra
         callback.onPostTranslate(s);
     }
 
-    private TranslateResult translateText(String textToTranslate) throws IOException {
+    private TranslateResult translateText(String textToTranslate) throws IOException, EmptyResponseException {
         Translator translator = Translator.getInstance();
         return translator.translate(textToTranslate, sharedPreferences.getString(StartActivity.LANGUAGE_FROM, Language.ENGLISH), sharedPreferences.getString(StartActivity.LANGUAGE_TO, Language.POLISH));
     }
